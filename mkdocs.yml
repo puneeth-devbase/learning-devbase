@@ -1,0 +1,51 @@
+site_name: Learning
+nav:
+  # - Home: 'index.md'
+  - Machine Learning:
+    - 'Probability & Statistics': 'machine-learning/probability-statistics.md'
+    - 'Introduction': 'machine-learning/introduction.md'
+    - 'Types of learning': 'machine-learning/different-types-of-learning.md'
+    - 'Hypothesis Space and Inductive Bias': 'machine-learning/hypothesis-space-and-inductive-bias.md'
+theme:
+  name: material
+  icon:
+    logo: material/book-open-variant
+  favicon: assets/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+extra_css:
+  - css/extra.css
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
