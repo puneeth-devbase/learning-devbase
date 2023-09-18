@@ -17,18 +17,27 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
+      primary: teal
+      accent: purple
 
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+      primary: teal
+      accent: lime
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
 extra_css:
   - css/extra.css
+  - css/neoteroi-mkdocs.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/puneeth-devbase
 markdown_extensions:
   - abbr
   - attr_list
