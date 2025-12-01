@@ -7,10 +7,10 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest   # or ubuntu-latest if you prefer Linux
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -19,8 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install MkDocs
-        run: |
-          py -m pip install mkdocs mkdocs-material
+        run: py -m pip install mkdocs mkdocs-material
 
       - name: Build MkDocs
         run: py -m mkdocs build --clean
