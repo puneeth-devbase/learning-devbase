@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install MkDocs
-        run: py -m pip install mkdocs mkdocs-material
+        run: py -m pip install mkdocs mkdocs-material mkdocs-glightbox-plugin
 
       - name: Build MkDocs
         run: py -m mkdocs build --clean
