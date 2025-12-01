@@ -45,7 +45,6 @@ markdown_extensions:
   - md_in_html
   - def_list
   - pymdownx.tilde
-  - pymdownx.snippets
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
