@@ -54,7 +54,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install MkDocs
-        run: py -m pip install mkdocs mkdocs-material
+        run: py -m pip install mkdocs mkdocs-material pymdown-extensions mkdocs-glightbox-plugin mkdocs-awesome-pages-plugin mkdocs-minify-plugin
 
       - name: Build MkDocs site into public/
         run: py -m mkdocs build --site-dir public
