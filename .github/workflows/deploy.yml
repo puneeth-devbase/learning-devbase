@@ -55,15 +55,15 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
+            py -m pip install --upgrade pip
+            py -m pip install -r requirements.txt
           else
-            python -m pip install --upgrade pip
-            pip install mkdocs mkdocs-material pymdown-extensions mkdocs-glightbox-plugin mkdocs-awesome-pages-plugin mkdocs-minify-plugin
+            py -m pip install --upgrade pip
+            py -m pip install mkdocs mkdocs-material pymdown-extensions mkdocs-glightbox-plugin mkdocs-awesome-pages-plugin mkdocs-minify-plugin
           fi
 
       - name: Build MkDocs site
-        run: mkdocs build --site-dir site
+        run: py -m mkdocs build --site-dir site
 
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@v2
