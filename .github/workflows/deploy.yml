@@ -1,4 +1,39 @@
-name: Auto Deploy MkDocs to Firebase
+# name: Auto Deploy MkDocs to Firebase
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build-deploy:
+#     runs-on: windows-latest   # or ubuntu-latest if you prefer Linux
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Set up Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.10'
+
+#       - name: Install MkDocs
+#         run: py -m pip install mkdocs mkdocs-material pymdown-extensions mkdocs-glightbox-plugin mkdocs-awesome-pages-plugin mkdocs-minify-plugin
+
+#       - name: Build MkDocs
+#         run: py -m mkdocs build --clean
+
+#       - name: Install Firebase CLI
+#         run: npm install -g firebase-tools@latest
+
+#       - name: Deploy to Firebase Hosting
+#         env:
+#           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+#         run: firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+
+
+name: Deploy MkDocs to Firebase
 
 on:
   push:
@@ -6,28 +41,26 @@ on:
       - main
 
 jobs:
-  build-deploy:
-    runs-on: windows-latest   # or ubuntu-latest if you prefer Linux
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.x'
 
       - name: Install MkDocs
-        run: py -m pip install mkdocs mkdocs-material pymdown-extensions mkdocs-glightbox-plugin mkdocs-awesome-pages-plugin mkdocs-minify-plugin
+        run: pip install mkdocs mkdocs-material
 
-      - name: Build MkDocs
-        run: py -m mkdocs build --clean
+      - name: Build MkDocs site into public/
+        run: mkdocs build --site-dir public
 
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools@latest
+        run: npm install -g firebase-tools
 
       - name: Deploy to Firebase Hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} --only hosting
