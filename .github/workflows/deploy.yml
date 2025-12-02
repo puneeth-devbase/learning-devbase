@@ -54,10 +54,10 @@ jobs:
           python-version: '3.x'
 
       - name: Install MkDocs
-        run: pip install mkdocs mkdocs-material
+        run: py -m pip install mkdocs mkdocs-material
 
       - name: Build MkDocs site into public/
-        run: mkdocs build --site-dir public
+        run: py -m mkdocs build --site-dir public
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
