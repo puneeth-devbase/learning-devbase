@@ -7,7 +7,7 @@ Neural network specific back propagation was develop back propagation is the key
 
 ## Algorithm to solve the problem
 
-![image info](../pictures/machine-learning/Algorithm_img.png)
+![image info](../assets/pictures/machine-learning/Algorithm_img.png)
 
 ## Fundamental Laws
 
@@ -25,7 +25,7 @@ Machine Learning explores algorithm that
 
 ## Schematic Diagram
 
-![image info](../pictures/machine-learning/schematic.png)
+![image info](../assets/pictures/machine-learning/schematic.png)
 
 ## Examples
 

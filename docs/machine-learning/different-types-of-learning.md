@@ -5,7 +5,7 @@
 * can comprise of input (x) and the corresponding output (y).
 * Given an observation x, what is the best label(output) for y
 
-![image info](../pictures/machine-learning/supervised-learning.jpg)
+![image info](../assets/pictures/machine-learning/supervised-learning.jpg)
 
 1. Given:
     - A set of input features X~1~, X~2~, X~3~, ..., X~n~.
@@ -28,7 +28,7 @@ For training
 
 ### Classification Example:
 
-![image info](../pictures/machine-learning/classification-example.png)
+![image info](../assets/pictures/machine-learning/classification-example.png)
 
 #### Classification Learning
 
@@ -49,7 +49,7 @@ Finding company names in text
     Given a particular word and want to find out is it the name of the company. This is the entity recoginition task, So instance is the word and the context of the word. which words come before the wordm which words come after the word and may be certain features of the word.
     Ex: is the word capitalized, is the word following this word i and c, is the bigram or two words previous this word context acquired by and so on and the output labels are firstm later, outside. If it is the company name is it the first word in that name is it inside a company name, is it outside company name.
 
-![image info](../pictures/machine-learning/sample-classification-task.png)
+![image info](../assets/pictures/machine-learning/sample-classification-task.png)
 
 #### Representations
 
@@ -57,16 +57,16 @@ Representation of the function there are two things: features and function class
 
 Function can be
 
-![Image title](../pictures/machine-learning/decision-tree.png){ align=right }
+![Image title](../assets/pictures/machine-learning/decision-tree.png){ align=right }
 1. `Decision Tree`
 
 :   Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started
 
-![Image title](../pictures/machine-learning/linear-function.png){ align=right }
+![Image title](../assets/pictures/machine-learning/linear-function.png){ align=right }
 2. `Linear function: in terms of attributes`
 :   Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started
 
-![Image title](../pictures/machine-learning/multivariate-linear-function.png){ align=right }
+![Image title](../assets/pictures/machine-learning/multivariate-linear-function.png){ align=right }
 3. `Multivariate linear function`
 :   Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started
 
@@ -74,7 +74,7 @@ Function can be
 4. `Single layer perceptron`
 :   Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started
 
-![Image title](../pictures/machine-learning/multi-layer-neural-network.png){ align=right }
+![Image title](../assets/pictures/machine-learning/multi-layer-neural-network.png){ align=right }
 5. `Multi-layer neural network`
 :   Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started Not Yet Started
 
@@ -95,7 +95,7 @@ Hypothesis space is **the set of all the possible legal hypothesis**. This is th
 
 ### Regression Example:
 
-![image info](../pictures/machine-learning/regression-example.png)
+![image info](../assets/pictures/machine-learning/regression-example.png)
 
 #### Features (Regression):
 
@@ -134,11 +134,11 @@ New Examples:
 
 in supervised learning you have the training set, the learning algorithm uses the training set to come up with a model or hypothesis, and in the testing phase given a new instance you use the hypothesis to predict the value of Y.
 
-![image info](../pictures/machine-learning/supervised-schematic-diagram.png)
+![image info](../assets/pictures/machine-learning/supervised-schematic-diagram.png)
 
 This also be shown like this in the training phase you get the input and label. From the input you can extract the feature of the input and feed it to the machine learning algorithm. Similarly in the testing phase given the input use a feature extractor to extract the feature and you feed it to the classifier model to get the label.
 
-![image info](../pictures/machine-learning/supervised-similar-schematic-diagram.png)
+![image info](../assets/pictures/machine-learning/supervised-similar-schematic-diagram.png)
 
 
 
@@ -147,19 +147,19 @@ This also be shown like this in the training phase you get the input and label. 
 * only given x, there is no label to the data.
 * given a set of x's, cluster or summarize them or find some patterns.
 
-![image info](../pictures/machine-learning/unsupervised-learning.png)
+![image info](../assets/pictures/machine-learning/unsupervised-learning.png)
 
 ## Reinforcement Learning
 Agent who is acting in an environment, and you want to figure out what actions  the agent must take at every step. The action that the agent takes is based on the rewards or penality is that the agent gets in different states.
 
-![image info](../pictures/machine-learning/reinforcement-learning.png)
-![image info](../pictures/machine-learning/reinforcement-learning1.png)
+![image info](../assets/pictures/machine-learning/reinforcement-learning.png)
+![image info](../assets/pictures/machine-learning/reinforcement-learning1.png)
 
 ## Semi-supervised Learning
 
 * It is the combination of supervised and unsupervised learning. That is you have some labeled training data and also have larger amount of unlabeled training data and can try to come up with some learning algorithm that convert even when the training data is limited.
 
-![image info](../pictures/machine-learning/semi-supervised-learning.png)
+![image info](../assets/pictures/machine-learning/semi-supervised-learning.png)
 
 
 *[discrete]: Indiviually separate.

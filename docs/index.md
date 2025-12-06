@@ -7,9 +7,9 @@ hide:
 #
 ## Machine Learning
 
-<!-- ![Image title](./pictures/machine-learning/machine-learning.png){ align=right, width="1000" } -->
+<!-- ![Image title](./assets/pictures/machine-learning/machine-learning.png){ align=right, width="1000" } -->
 
-<img style="float: right; width: 75%;" src="./pictures/machine-learning/machine-learning.png">
+<img style="float: right; width: 75%;" src="./assets/pictures/machine-learning/machine-learning.png">
 
 - [Probability & Statistics](machine-learning/probability-statistics.md)
 - [Introduction](machine-learning/introduction.md)

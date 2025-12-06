@@ -28,13 +28,13 @@ for particular instance we may be or a particular task we may be describing all 
 Now based on this can define a features space, for simplicity assume that there are two features are x~1~ and x~2~.
 In general can have n number of features, we have two features the features define a two-dimensional space if we have n features the define an n dimensional space if you take a particular instance.
 
-![Image title](../pictures/machine-learning/feature-space.png)
+![Image title](../assets/pictures/machine-learning/feature-space.png)
 
 So, in order to answer the prediction problem we have to come up with the function, let us say we come up with the pink function pink line, and we say lines points that lie to the right of the pink line is negative the points which lie to the left of the pink line is positive.
 
 So, this pink line is the function that we have come up with and so this is the hypothesis or function that we use to do our prediction.
 
-![Image title](../pictures/machine-learning/hypothesis-space.png)
+![Image title](../assets/pictures/machine-learning/hypothesis-space.png)
 
 Now, we could have instead of this particular line have hypothesized other functions. So, all these are possible functions which we could have found and the set of all such legal functions that we could have come up with they define the hypothesis space. In a particular learning problem, you first defined the hypothesis the space that is the class of function that you are going to consider then given the data points, you try to come up with the best hypothesis given the data that you have.
 
